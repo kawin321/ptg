@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <title>3 ซ่าเครื่องเขียน</title>
+  <rect x="1" y="1" width="62" height="62" rx="18" fill="#E4F2EB"/>
+  <g transform="rotate(-7 32 32)">
+    <rect x="15" y="12" width="36" height="43" rx="7" fill="#25483F"/>
+    <rect x="16" y="10" width="34" height="42" rx="6" fill="#FFF8E9" stroke="#25483F" stroke-width="2"/>
+    <rect x="12" y="8" width="35" height="42" rx="6" fill="#F3A8BE" stroke="#25483F" stroke-width="2"/>
+    <path d="M19 9V49" stroke="#CE7895" stroke-width="1.5"/>
+    <path d="M10 17H15M10 26H15M10 35H15M10 43H15" stroke="#25483F" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M26 20C29 15 40 17 39 23C39 27 34 29 30 29C36 28 42 32 39 37C36 42 28 41 25 37" stroke="#FFFCED" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <path d="M53 5L54.6 9.4L59 11L54.6 12.6L53 17L51.4 12.6L47 11L51.4 9.4L53 5Z" fill="#D7A340"/>
+</svg>

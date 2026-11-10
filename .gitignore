@@ -1,0 +1,16 @@
+# ความลับ — ห้ามขึ้น git
+config/database.production.php
+config/database.local.php
+storage/app.key
+storage/sessions/*
+!storage/sessions/.gitkeep
+
+# สลิปโอนเงินของลูกค้า (ข้อมูลส่วนตัว)
+assets/images/slips/*
+!assets/images/slips/.htaccess
+!assets/images/slips/.gitkeep
+
+*.log
+*.bak
+.DS_Store
+Thumbs.db

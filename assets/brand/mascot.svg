@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+  <title>มาสคอตสมุดเลข 3 ร้าน 3 ซ่าเครื่องเขียน</title>
+  <defs>
+    <linearGradient id="cover" x1="40" y1="33" x2="86" y2="91" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFC9D7"/><stop offset="1" stop-color="#EF8FA9"/>
+    </linearGradient>
+    <linearGradient id="pencil" x1="86" y1="14" x2="95" y2="71" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE3A0"/><stop offset="1" stop-color="#EAB54B"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .za-body { animation: za-bob .8s ease-in-out 6; transform-origin: 60px 72px; }
+    .za-foot-left { animation: za-step .8s ease-in-out 6; transform-origin: 47px 90px; }
+    .za-foot-right { animation: za-step .8s ease-in-out -.4s 6; transform-origin: 75px 90px; }
+    .za-hand { animation: za-wave .8s ease-in-out 6; transform-origin: 88px 67px; }
+    .za-spark { animation: za-twinkle 1.6s ease-in-out 3; transform-box: fill-box; transform-origin: center; }
+    .za-spark-small { animation-delay: -.8s; }
+    @keyframes za-bob { 0%, 100% { transform: translateY(0) rotate(-2deg); } 50% { transform: translateY(-3px) rotate(1deg); } }
+    @keyframes za-step { 0%, 100% { transform: rotate(-13deg); } 50% { transform: rotate(14deg); } }
+    @keyframes za-wave { 0%, 100% { transform: rotate(0); } 50% { transform: rotate(-18deg); } }
+    @keyframes za-twinkle { 0%, 100% { opacity: .65; transform: scale(.85); } 50% { opacity: 1; transform: scale(1.12); } }
+    @media (prefers-reduced-motion: reduce) { .za-body, .za-foot-left, .za-foot-right, .za-hand, .za-spark { animation: none; } }
+  </style>
+  <path d="M17 43C19 20 44 14 66 19C90 13 108 32 106 57C114 81 93 102 68 101C41 108 13 90 16 67C11 60 12 50 17 43Z" fill="#E4F2EB"/>
+  <path d="M18 76C8 49 26 23 50 19M78 101C98 96 110 80 108 65" stroke="#92BFB1" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3 6"/>
+  <ellipse cx="61" cy="107" rx="29" ry="4" fill="#1E554D" fill-opacity=".12"/>
+  <g transform="rotate(-24 32 53)">
+    <rect x="24" y="23" width="16" height="60" rx="4" fill="#73B7A3" stroke="#25483F" stroke-width="2.5"/>
+    <path d="M25 33H32M25 42H29M25 51H32M25 60H29" stroke="#E9F8EF" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g transform="rotate(24 88 46)">
+    <path d="M82 22H94V67L88 78L82 67V22Z" fill="url(#pencil)" stroke="#65502F" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M82 22V17C82 14 94 14 94 17V22" fill="#E9A3B8" stroke="#65502F" stroke-width="2.5"/>
+    <path d="M82 25H94M88 29V61" stroke="#FFF1CB" stroke-width="3"/>
+    <path d="M84 68L88 76L92 68" fill="#F9E6C3"/>
+    <path d="M86 74L88 78L90 74" fill="#28483F"/>
+  </g>
+  <g class="za-foot-left">
+    <path d="M47 87L45 99" stroke="#25483F" stroke-width="4" stroke-linecap="round"/>
+    <path d="M46 98C40 94 33 98 33 103C33 107 47 107 50 103L49 99Z" fill="#244C43"/>
+    <path d="M35 104H48" stroke="#FFF7E6" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g class="za-foot-right">
+    <path d="M75 87L77 99" stroke="#25483F" stroke-width="4" stroke-linecap="round"/>
+    <path d="M76 98C82 94 89 98 89 103C89 107 75 107 72 103L73 99Z" fill="#244C43"/>
+    <path d="M75 104H87" stroke="#FFF7E6" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g class="za-body">
+    <path d="M34 66C27 67 25 72 24 77" stroke="#25483F" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M21 75L24 79L28 76" stroke="#25483F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <g class="za-hand">
+      <path d="M86 67C95 68 99 61 98 56" stroke="#25483F" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M94 55L97 58L101 54" stroke="#25483F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g transform="rotate(-6 60 62)">
+      <rect x="34" y="35" width="52" height="57" rx="10" fill="#25483F"/>
+      <rect x="36" y="31" width="49" height="58" rx="9" fill="#FFF8E9" stroke="#25483F" stroke-width="2.5"/>
+      <path d="M42 36H77M42 40H77" stroke="#D8CDBA" stroke-width="1.5" stroke-linecap="round"/>
+      <rect x="32" y="28" width="51" height="58" rx="9" fill="url(#cover)" stroke="#25483F" stroke-width="2.8"/>
+      <path d="M42 29V85" stroke="#C96683" stroke-opacity=".6" stroke-width="2"/>
+      <path d="M29 39H36M29 49H36M29 59H36M29 69H36" stroke="#25483F" stroke-width="3" stroke-linecap="round"/>
+      <!-- Drawn paths keep the number crisp without requiring a font. -->
+      <path d="M51 43C53 38 68 37 70 45C72 51 65 55 59 55C66 54 73 59 70 65C67 72 54 71 50 66" stroke="#9F4963" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" transform="translate(0 1.5)"/>
+      <path d="M51 42C53 37 68 36 70 44C72 50 65 54 59 54C66 53 73 58 70 64C67 71 54 70 50 65" stroke="#FFFCED" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="54" cy="76" r="1.7" fill="#25483F"/><circle cx="68" cy="76" r="1.7" fill="#25483F"/>
+      <path d="M59 78Q61 80 63 78" stroke="#25483F" stroke-width="1.6" stroke-linecap="round"/>
+      <path d="M47 74H50M72 74H75" stroke="#D76E90" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M48 32H68" stroke="#FFE4EC" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </g>
+  <path class="za-spark" d="M21 13L23.5 19.5L30 22L23.5 24.5L21 31L18.5 24.5L12 22L18.5 19.5L21 13Z" fill="#E6B85B"/>
+  <path class="za-spark za-spark-small" d="M104 34L105.8 39.2L111 41L105.8 42.8L104 48L102.2 42.8L97 41L102.2 39.2L104 34Z" fill="#D694AE"/>
+  <circle cx="67" cy="13" r="2.5" fill="#D694AE"/>
+  <circle cx="15" cy="88" r="2" fill="#E6B85B"/>
+  <path d="M98 89L101 92M101 89L98 92" stroke="#438876" stroke-width="2" stroke-linecap="round"/>
+</svg>

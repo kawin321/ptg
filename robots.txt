@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /checkout.php
+Disallow: /cart.php
+Disallow: /account.php
+Disallow: /my-orders.php
+Sitemap: https://ptg.ct.ws/sitemap.php

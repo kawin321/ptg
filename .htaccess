@@ -1,0 +1,31 @@
+# หน้า 404 ของร้าน (ต้องเปิดใช้ AllowOverride ใน Apache — XAMPP ค่าเริ่มต้นใช้ได้)
+ErrorDocument 404 /404.php
+
+# ไม่ให้เปิดดูรายการไฟล์ในโฟลเดอร์ และไม่ให้รันสคริปต์แปลก ๆ
+Options -Indexes
+ServerSignature Off
+
+<IfModule mod_headers.c>
+    Header always unset X-Powered-By
+    Header always set X-Content-Type-Options "nosniff"
+</IfModule>
+
+# เว็บนี้ใช้แค่ GET/POST/HEAD: วิธีอื่น (TRACE, PUT, DELETE ฯลฯ) ปฏิเสธทั้งหมด
+<LimitExcept GET POST HEAD>
+    Require all denied
+</LimitExcept>
+
+# ซ่อนไฟล์ที่ไม่ควรเปิดตรง ๆ (ฐานข้อมูลสำรอง, log, ไฟล์ตั้งค่า, กุญแจ, ไฟล์แก้ไขค้าง)
+<FilesMatch "(?i)(\.(sql|md|log|ini|bak|old|orig|swp|key|inc|sh|bat|lock|yml|yaml|dist)|~)$">
+    Require all denied
+</FilesMatch>
+
+# โฟลเดอร์ภายในและไฟล์ที่ขึ้นต้นด้วยจุด (นอกจาก .well-known) เปิดจากเว็บไม่ได้
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # TRACK/CONNECT (TRACE ปิดได้เฉพาะที่ httpd.conf ด้วย TraceEnable Off)
+    RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK|CONNECT) [NC]
+    RewriteRule .* - [F,L]
+    RewriteRule ^(includes|config|database|storage)(/|$) - [F,L]
+    RewriteRule (^|/)\.(?!well-known) - [F,L]
+</IfModule>
