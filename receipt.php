@@ -33,11 +33,11 @@ $s = settings_all();
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600&family=Prompt:wght@500;600&display=swap" rel="stylesheet">
     <style nonce="<?= csp_nonce() ?>">
-        :root { --text: #2d3a47; --muted: #5f6873; --line: rgba(31, 42, 55, .14); --pink: #f7c8d3; --primary: #0f766e; }
+        :root { --text: #27344a; --muted: #535b7d; --line: rgba(39, 52, 74, .14); --pink: #ead0cf; --primary: #626b91; }
         * { box-sizing: border-box; }
-        body { margin: 0; font-family: "Noto Sans Thai", Tahoma, sans-serif; color: var(--text); background: #f7f4ee; font-variant-numeric: tabular-nums; line-height: 1.6; }
+        body { margin: 0; font-family: "Noto Sans Thai", Tahoma, sans-serif; color: var(--text); background: #f8f3ec; font-variant-numeric: tabular-nums; line-height: 1.6; }
         .toolbar { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; padding: 16px; }
-        .toolbar a, .toolbar button { min-height: 44px; display: inline-flex; align-items: center; padding: 8px 20px; border-radius: 10px; border: 1px solid #c9c2b4; background: #fff; color: var(--text); font: inherit; font-weight: 600; text-decoration: none; cursor: pointer; }
+        .toolbar a, .toolbar button { min-height: 44px; display: inline-flex; align-items: center; padding: 8px 20px; border-radius: 10px; border: 1px solid #d6ccc0; background: #fff; color: var(--text); font: inherit; font-weight: 600; text-decoration: none; cursor: pointer; }
         .toolbar button { background: var(--primary); border-color: var(--primary); color: #fff; }
         .sheet { width: 160mm; max-width: calc(100% - 32px); margin: 0 auto 32px; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 32px; position: relative; }
         .head { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-bottom: 1px solid var(--line); padding-bottom: 16px; margin-bottom: 16px; }

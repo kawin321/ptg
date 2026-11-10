@@ -1221,8 +1221,8 @@ function maintenance_gate(): void
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600&family=Prompt:wght@600&display=swap" rel="stylesheet">
     <style nonce="<?= $esc(csp_nonce()) ?>">
-        :root { --bg: #f7f4ee; --card: #fff; --text: #2d3a47; --muted: #5f6873; --line: rgba(31,42,55,.12); --accent: #0f766e; }
-        @media (prefers-color-scheme: dark) { :root { --bg: #161b21; --card: #1f262e; --text: #e8e4dc; --muted: #a7afb8; --line: rgba(255,255,255,.1); --accent: #5ec4b6; } }
+        :root { --bg: #f8f3ec; --card: #fffdf9; --text: #27344a; --muted: #535b7d; --line: rgba(39,52,74,.12); --accent: #626b91; }
+        @media (prefers-color-scheme: dark) { :root { --bg: #1b2333; --card: #27344a; --text: #f0e6d8; --muted: #b9b4ca; --line: rgba(255,255,255,.1); --accent: #c9bedb; } }
         * { box-sizing: border-box; }
         body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 16px; background: var(--bg); color: var(--text); font-family: "Noto Sans Thai", Tahoma, sans-serif; line-height: 1.7; }
         main { width: min(100%, 480px); background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 36px 28px; text-align: center; }

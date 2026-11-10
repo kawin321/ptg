@@ -78,7 +78,7 @@ if (!$single) {
         .total { text-align: right; font-size: 18px; font-weight: 700; margin-top: 12px; }
         .foot { margin-top: 18px; font-size: 12px; color: #555; text-align: center; }
         .toolbar { text-align: center; margin: 16px; }
-        .toolbar button, .toolbar a { padding: 9px 20px; border: 0; border-radius: 999px; background: #2d3a47; color: #fff; font: inherit; cursor: pointer; text-decoration: none; }
+        .toolbar button, .toolbar a { padding: 9px 20px; border: 0; border-radius: 999px; background: #27344a; color: #fff; font: inherit; cursor: pointer; text-decoration: none; }
         @media print {
             body { background: #fff; }
             .sheet { box-shadow: none; margin: 0 auto; width: auto; max-width: none; break-after: page; page-break-after: always; }

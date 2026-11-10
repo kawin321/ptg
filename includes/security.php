@@ -53,10 +53,10 @@ function security_error_page(int $code, string $message = "ระบบขัด
 
     echo '<!DOCTYPE html><html lang="th"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">'
         . '<meta name="robots" content="noindex"><title>เกิดข้อผิดพลาด</title></head>'
-        . '<body style="font-family:Tahoma,sans-serif;display:grid;place-items:center;min-height:100vh;margin:0;background:#f7f4ee;color:#2d3a47">'
+        . '<body style="font-family:Tahoma,sans-serif;display:grid;place-items:center;min-height:100vh;margin:0;background:#f8f3ec;color:#27344a">'
         . '<main style="text-align:center;padding:24px"><h1 style="font-size:24px;margin:0 0 8px">' . htmlspecialchars((string)$code, ENT_QUOTES, "UTF-8") . '</h1>'
         . '<p>' . htmlspecialchars($message, ENT_QUOTES, "UTF-8") . '</p>'
-        . '<p><a href="javascript:history.back()" style="color:#0f766e">กลับ</a></p></main></body></html>';
+        . '<p><a href="javascript:history.back()" style="color:#626b91">กลับ</a></p></main></body></html>';
     exit;
 }
 

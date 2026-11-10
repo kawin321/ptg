@@ -34,7 +34,7 @@ $navItems = [
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?= e($pageDescription) ?>">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#27344a">
     <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
     <?php
     $ogHost  = preg_match('/^[A-Za-z0-9.\-]+(:\d+)?$/', $_SERVER["HTTP_HOST"] ?? "") ? $_SERVER["HTTP_HOST"] : "";
