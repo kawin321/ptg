@@ -25,17 +25,17 @@
 
         <div class="footer-col">
             <h4>ติดต่อร้าน</h4>
+             <p class="muted">รับที่ร้าน หรือส่งถึงแผนก</p>
             <?php if (setting("shop_phone") !== ""): ?><p>โทร <?= e(setting("shop_phone")) ?></p><?php endif; ?>
             <?php if (setting("shop_line") !== ""): ?><p>LINE / Facebook <?= e(setting("shop_line")) ?></p><?php endif; ?>
             <?php if (setting("shop_address") !== ""): ?><p><?= e(setting("shop_address")) ?></p><?php endif; ?>
             <?php if (setting("shop_hours") !== ""): ?><p>เปิด <?= e(setting("shop_hours")) ?></p><?php endif; ?>
-            <p class="muted">รับที่ร้าน หรือส่งถึงแผนก</p>
             <a href="contact.php">วิธีสั่งซื้อและคำถามที่พบบ่อย</a>
         </div>
     </div>
 
     <div class="footer-bottom">
-        © 3 Za Stationery · เว็บไซต์สำหรับโครงงาน
+        3 Za Stationery@gmail.com · เว็บไซต์สำหรับโครงงาน
         · <a href="admin/login.php">สำหรับผู้ดูแลร้าน</a>
     </div>
 </footer>
