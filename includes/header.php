@@ -55,8 +55,8 @@ $navItems = [
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700&family=Prompt:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css?v=9">
-    <link rel="stylesheet" href="assets/css/brand.css?v=1">
+    <link rel="stylesheet" href="assets/css/style.css?v=10">
+    <link rel="stylesheet" href="assets/css/brand.css?v=2">
 </head>
 <body>
 
@@ -73,7 +73,7 @@ $navItems = [
     <div class="header-inner">
 
         <a href="index.php" class="brand" aria-label="<?= e(SHOP_NAME) ?> หน้าหลัก">
-            <img class="brand-mascot" src="assets/brand/mascot.svg" alt="" width="80" height="80">
+            <img class="brand-mascot" src="assets/brand/mascot.svg" alt="" width="92" height="92">
             <span class="brand-text">
                 <span class="brand-eyebrow">3 ZA · STATIONERY</span>
                 <strong>ซ่า<span>เครื่องเขียน</span></strong>

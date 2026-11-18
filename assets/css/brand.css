@@ -45,6 +45,14 @@
 }
 .brand-text strong span { color: #626b91; }
 .brand-text small { font-size: 10px; line-height: 1.5; color: #535b7d; }
+/* โลโก้บนแถบหัวสีกรมท่า: ใหญ่ขึ้นเล็กน้อย และตัวอักษรโทนสว่าง */
+.site-header .brand > .brand-mascot { width: 92px; height: 92px; }
+.site-header .brand-text strong { color: #f0e6d8; }
+.site-header .brand-text strong span { color: #c9bedb; }
+.site-header .brand-text strong::after { background: #a99bb8; opacity: .6; }
+.site-header .brand-text .brand-eyebrow { color: #d6a6a5; }
+.site-header .brand-text small { color: #b9b4ca; }
+.site-header .brand:hover .brand-mascot, .site-header .brand:focus-visible .brand-mascot { filter: drop-shadow(0 5px 6px rgb(0 0 0 / 28%)); }
 .footer-brand { gap: 10px; }
 .footer-brand .brand-mascot { width: 76px; height: 76px; }
 .footer-brand .brand-text strong, .footer-brand .brand-text strong span { color: #f0e6d8; }
@@ -62,12 +70,12 @@
 
 @media (max-width: 760px) {
     .brand { gap: 7px; }
-    .brand > .brand-mascot { width: 66px; height: 66px; }
+    .brand > .brand-mascot, .site-header .brand > .brand-mascot { width: 74px; height: 74px; }
     .brand .brand-text strong { font-size: 19px; }
     .brand .brand-text .brand-eyebrow { display: block; font-size: 8px; letter-spacing: 1.9px; }
 }
 @media (max-width: 360px) {
-    .brand > .brand-mascot { width: 56px; height: 56px; }
+    .brand > .brand-mascot, .site-header .brand > .brand-mascot { width: 62px; height: 62px; }
     .brand .brand-text strong { font-size: 17px; }
     .brand .brand-text .brand-eyebrow { letter-spacing: 1.3px; }
 }
